@@ -24,6 +24,9 @@
       <button type="submit" class="btn btn-primary">Actualizar Categoria</button>
     </div>
   </div>
+
+
+  
 </form>
 </div>
 </div>

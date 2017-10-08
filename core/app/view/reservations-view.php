@@ -142,21 +142,15 @@ if($_GET["q"]!=""||$_GET["pacient_id"]!="" ||$_GET["medic_id"]!="" ){
         
         <a href="index.php?action=delreservation&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a>
         <a href="?view=reservations" class="btn btn-warning btn-xs">No</a>
-      	</div>
+      		</div>
     	</div>
-  		</div>
-		</div>
+  	</div>
+</div>
 
 
-
-
-
-
-
-
-				</td>
-				</tr>
-				<?php
+	</td>
+		</tr>
+<?php
 
 			}
 			?>
