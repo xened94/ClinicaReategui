@@ -37,9 +37,36 @@
 				<td><?php echo $user->phone; ?></td>
 				<td><?php if($user->category_id!=null){ echo $user->getCategory()->name; } ?></td>
 				<td style="width:280px;">
+
 				<a href="index.php?view=medichistory&id=<?php echo $user->id;?>" class="btn btn-default btn-xs">Historial</a>
 				<a href="index.php?view=editmedic&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a>
-				<a href="index.php?view=delmedic&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a>
+
+				<a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Eliminar</a>
+
+
+			 	 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel"><strong>¡ESPERAAAAAAAAAAAAAAAAAAAAAAAAAA!</strong></h4>
+				      </div>
+				      <div class="modal-body">
+				        <h3>¿Estás seguro que quieres eliminar un paciente?</h3>
+				      </div>
+				      <div class="modal-footer">
+        
+        <a href="index.php?view=delmedic&id=<?php echo $user->id;?>" rel="tooltip" title="Si" class="btn btn-danger btn-xs">Si</a>
+
+        <a href="?view=medics" rel="tooltip" title="No" class="btn btn-warning btn-xs">No</a>
+
+
+
+
+
+
+
+
 
 				</td>
 				</tr>

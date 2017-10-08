@@ -43,9 +43,9 @@
 
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Direccion <SUP><font size="2" color="black">*</h3></font></SUP></label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Dirección </label>
     <div class="col-md-6">
-      <input type="text" name="address" class="form-control" required id="address1" placeholder="Direccion" maxlength="35" >
+      <input type="text" name="address" class="form-control"  id="address1" placeholder="Dirección" maxlength="35" >
     </div>
   </div>
 

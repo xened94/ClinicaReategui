@@ -18,7 +18,7 @@ $payments = PaymentData::getAll();
 
   <div class="form-group">
 
-    <div class="col-lg-4">
+    <div class="col-lg-3">
 		<div class="input-group">
 		  <span class="input-group-addon"><i class="fa fa-male"></i></span>
 <select name="pacient_id" class="form-control">
@@ -29,7 +29,7 @@ $payments = PaymentData::getAll();
 </select>
 		</div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
 		<div class="input-group">
 		  <span class="input-group-addon"><i class="fa fa-support"></i></span>
 <select name="medic_id" class="form-control">
@@ -41,7 +41,36 @@ $payments = PaymentData::getAll();
 		</div>
     </div>
 
-    <!--div class="col-lg-3">
+    
+
+     <div class="col-lg-3">
+		<div class="input-group">
+		  <span class="input-group-addon">ESTADO</span>
+<select name="status_id" class="form-control">
+  <?php foreach($statuses as $p):?>
+    <option value="<?php echo $p->id; ?>" <?php if(isset($_GET["status_id"]) && $_GET["status_id"]==$p->id){ echo "selected"; } ?>><?php echo $p->name; ?></option>
+  <?php endforeach; ?>
+</select>
+		</div>
+    </div>
+
+
+     <div class="col-lg-3">
+		<div class="input-group">
+		  <span class="input-group-addon">PAGO</span>
+<select name="payment_id" class="form-control">
+  <?php foreach($payments as $p):?>
+    <option value="<?php echo $p->id; ?>" <?php if(isset($_GET["payment_id"]) && $_GET["payment_id"]==$p->id){ echo "selected"; } ?>><?php echo $p->name; ?></option>
+  <?php endforeach; ?>
+</select>
+		</div>
+    </div>
+
+  </div>
+
+
+  <div class="form-group">
+  	<div class="col-lg-3">
 		<div class="input-group">
 		  <span class="input-group-addon">INICIO</span>
 		  <input type="date" name="start_at" value="<?php if(isset($_GET["start_at"]) && $_GET["start_at"]!=""){ echo $_GET["start_at"]; } ?>" class="form-control" placeholder="Palabra clave">
@@ -53,31 +82,7 @@ $payments = PaymentData::getAll();
 		  <input type="date" name="finish_at" value="<?php if(isset($_GET["finish_at"]) && $_GET["finish_at"]!=""){ echo $_GET["finish_at"]; } ?>" class="form-control" placeholder="Palabra clave">
 		</div>
     </div>
-
-  </div>
-  <div class="form-group">
-
-    <div class="col-lg-3">
-		<div class="input-group">
-		  <span class="input-group-addon">ESTADO</span>
-<select name="status_id" class="form-control">
-  <?php foreach($statuses as $p):?>
-    <option value="<?php echo $p->id; ?>" <?php if(isset($_GET["status_id"]) && $_GET["status_id"]==$p->id){ echo "selected"; } ?>><?php echo $p->name; ?></option>
-  <?php endforeach; ?>
-</select>
-		</div>
-    </div>
-
-    <div class="col-lg-3">
-		<div class="input-group">
-		  <span class="input-group-addon">PAGO</span>
-<select name="payment_id" class="form-control">
-  <?php foreach($payments as $p):?>
-    <option value="<?php echo $p->id; ?>" <?php if(isset($_GET["payment_id"]) && $_GET["payment_id"]==$p->id){ echo "selected"; } ?>><?php echo $p->name; ?></option>
-  <?php endforeach; ?>
-</select>
-		</div>
-    </div-->
+   
     <div class="col-lg-4">
     <button class="btn btn-primary btn-block">Consultar</button>
     </div>

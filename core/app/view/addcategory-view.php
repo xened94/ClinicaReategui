@@ -1,6 +1,5 @@
 <?php
 
-
 if(count($_POST)>0){
 	$user = new CategoryData();
 	$user->name = $_POST["name"];
@@ -8,8 +7,6 @@ if(count($_POST)>0){
 
 print "<script>window.location='index.php?view=categories';</script>";
 
-
 }
-
 
 ?>

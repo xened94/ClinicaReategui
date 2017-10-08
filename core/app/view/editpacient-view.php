@@ -46,12 +46,12 @@
       <input type="text" name="address" value="<?php echo $user->address;?>" class="form-control" required id="username" placeholder="Direccion">
     </div>
   </div>
-  <div class="form-group">
+  <!-- class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
     <div class="col-md-6">
       <input type="text" name="email" value="<?php echo $user->email;?>" class="form-control" id="email" placeholder="Email">
     </div>
-  </div>
+  </div-->
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Telefono</label>
@@ -59,18 +59,18 @@
       <input type="text" name="phone"  value="<?php echo $user->phone;?>"  class="form-control" id="inputEmail1" placeholder="Telefono">
     </div>
   </div>
-  <div class="form-group">
+  <!--div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Enfermedad</label>
     <div class="col-md-6">
       <textarea name="sick" class="form-control" id="sick" placeholder="Enfermedad"><?php echo $user->sick;?></textarea>
     </div>
-  </div>
-  <div class="form-group">
+  </div-->
+  <!--div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Medicamentos</label>
     <div class="col-md-6">
       <textarea name="medicaments" class="form-control" id="sick" placeholder="Medicamentos"><?php echo $user->medicaments;?></textarea>
     </div>
-  </div>
+  </div-->
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Alergia</label>
     <div class="col-md-6">

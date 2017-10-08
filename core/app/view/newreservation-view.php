@@ -44,7 +44,7 @@ $payments = PaymentData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label" >Sintomas</label>
 
     <div class="col-lg-6">
-    <textarea class="form-control" name="symtoms" placeholder="Sintomas" maxlength="150"></textarea>
+    <textarea class="form-control" name="symtoms" placeholder="Sintomas" maxlength="50"></textarea>
     </div>
   </div>
 
@@ -52,14 +52,14 @@ $payments = PaymentData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label">Fecha <SUP><font size="2" color="black">*</h3></font></SUP></label>
 
     <div class="col-lg-4">
-      <input type="date" name="date_at" required class="form-control" id="inputEmail1" placeholder="Fecha">
+      <input type="date" name="date_at" required class="form-control" id="inputEmail1" placeholder="Fecha" maxlength="9">
     </div>
     </div>
     <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Hora <SUP><font size="2" color="black">*</h3></font></SUP></label>
 
     <div class="col-lg-4">
-      <input type="time" name="time_at" required class="form-control" id="inputEmail1" placeholder="Hora">
+      <input type="time" name="time_at" required class="form-control" id="inputEmail1" placeholder="Hora" >
     </div>
     </div>
   
@@ -82,11 +82,13 @@ $payments = PaymentData::getAll();
     <textarea class="form-control" name="medicaments" placeholder="Medicamentos"></textarea>
     </div>
   </div-->
+  
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Estado de la cita <SUP><font size="2" color="black">*</font></SUP></label>
 
     <div class="col-lg-2">
 <select name="status_id" class="form-control" required>
+  <option value="">-- Elija estado --</option>
   <?php foreach($statuses as $p):?>
     <option value="<?php echo $p->id; ?>"><?php echo $p->name; ?></option>
   <?php endforeach; ?>
@@ -98,6 +100,7 @@ $payments = PaymentData::getAll();
 
     <div class="col-lg-2">
 <select name="payment_id" class="form-control" required>
+  <option value="">-- Elija pago --</option>
   <?php foreach($payments as $p):?>
     <option value="<?php echo $p->id; ?>"><?php echo $p->name; ?></option>
   <?php endforeach; ?>

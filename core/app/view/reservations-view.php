@@ -107,10 +107,10 @@ if($_GET["q"]!=""||$_GET["pacient_id"]!="" ||$_GET["medic_id"]!="" ){
 			?>
 			<table class="table table-bordered table-hover">
 			<thead>
-			<th>Asunto</th>
+		
 			<th>Paciente</th>
 			<th>Medico</th>
-			<th>Fecha</th>
+			<th>Fecha y Hora</th>
 			<th></th>
 			</thead>
 			<?php
@@ -119,13 +119,41 @@ if($_GET["q"]!=""||$_GET["pacient_id"]!="" ||$_GET["medic_id"]!="" ){
 				$medic = $user->getMedic();
 				?>
 				<tr>
-				<td><?php echo $user->title; ?></td>
+				
 				<td><?php echo $pacient->name." ".$pacient->lastname; ?></td>
 				<td><?php echo $medic->name." ".$medic->lastname; ?></td>
 				<td><?php echo $user->date_at." ".$user->time_at; ?></td>
 				<td style="width:180px;">
 				<a href="index.php?view=editreservation&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a>
-				<a href="index.php?action=delreservation&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a>
+				
+
+				<a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#myModal">Eliminar</a>
+			 	 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				        <h4 class="modal-title" id="myModalLabel"><strong>¡ESPERAAAAAAAAAAAAAAAAAAAAAAAAAA!</strong></h4>
+				      </div>
+				      <div class="modal-body">
+				        <h3>¿Estás seguro que quieres eliminar un paciente?</h3>
+				      </div>
+				      <div class="modal-footer">
+        
+        <a href="index.php?action=delreservation&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a>
+        <a href="?view=reservations" class="btn btn-warning btn-xs">No</a>
+      	</div>
+    	</div>
+  		</div>
+		</div>
+
+
+
+
+
+
+
+
 				</td>
 				</tr>
 				<?php

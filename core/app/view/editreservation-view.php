@@ -14,12 +14,14 @@ $payments = PaymentData::getAll();
   </div>
   <div class="card-content table-responsive">
 <form class="form-horizontal" role="form" method="post" action="./?action=updatereservation">
-  <div class="form-group">
+
+  <!--div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Asunto</label>
     <div class="col-lg-10">
       <input type="text" name="title" value="<?php echo $reservation->title; ?>" required class="form-control" id="inputEmail1" placeholder="Asunto">
     </div>
-  </div>
+  </div-->
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Paciente</label>
     <div class="col-lg-4">
@@ -43,37 +45,43 @@ $payments = PaymentData::getAll();
   </div>
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Fecha/Hora</label>
-    <div class="col-lg-5">
+    <label for="inputEmail1" class="col-lg-2 control-label">Fecha</label>
+    <div class="col-lg-4">
       <input type="date" name="date_at" value="<?php echo $reservation->date_at; ?>" required class="form-control" id="inputEmail1" placeholder="Fecha">
     </div>
-    <div class="col-lg-5">
+    
+  </div>
+
+   <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Hora</label>
+    <div class="col-lg-4">
       <input type="time" name="time_at" value="<?php echo $reservation->time_at; ?>" required class="form-control" id="inputEmail1" placeholder="Hora">
     </div>
   </div>
-  <div class="form-group">
+
+  <!--div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nota</label>
     <div class="col-lg-4">
     <textarea class="form-control" name="note" placeholder="Nota"><?php echo $reservation->note;?></textarea>
     </div>
+
     <label for="inputEmail1" class="col-lg-2 control-label">Enfermedad</label>
     <div class="col-lg-4">
     <textarea class="form-control" name="sick" placeholder="Enfermedad"><?php echo $reservation->sick;?></textarea>
     </div>
+  </div-->
 
-  </div>
 
-      <div class="form-group">
+    <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Sintomas</label>
     <div class="col-lg-4">
     <textarea class="form-control" name="symtoms" placeholder="Sintomas"><?php echo $reservation->symtoms;?></textarea>
     </div>
-    <label for="inputEmail1" class="col-lg-2 control-label">Medicamentos</label>
-    <div class="col-lg-4">
-    <textarea class="form-control" name="medicaments" placeholder="Medicamentos"><?php echo $reservation->medicaments;?></textarea>
-    </div>
+
+    
 
   </div>
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Estado de la cita</label>
     <div class="col-lg-4">
@@ -98,7 +106,7 @@ $payments = PaymentData::getAll();
 
     <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Costo</label>
-    <div class="col-lg-10">
+    <div class="col-lg-4">
 <div class="input-group">
   <span class="input-group-addon"><i class="fa fa-usd"></i></span>
   <input type="text" class="form-control" value="<?php echo $reservation->price;?>" name="price" placeholder="Costo">
