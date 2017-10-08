@@ -13,7 +13,7 @@ if(count($_POST)>0){
 	$user->phone = $_POST["phone"];
 	$user->update();
 
-
+Core::alert("Médico Actualizado exitosamente!");
 print "<script>window.location='index.php?view=medics';</script>";
 
 
@@ -21,3 +21,5 @@ print "<script>window.location='index.php?view=medics';</script>";
 
 
 ?>
+
+

@@ -2,6 +2,9 @@
 
 $client = PacientData::getById($_GET["id"]);
 $client->del();
-Core::redir("./index.php?view=pacients");
+
+Core::alert("Paciente eliminado Correctamente!");
+print "<script>window.location='index.php?view=pacients';</script>";
+
 
 ?>

@@ -44,7 +44,7 @@ $payments = PaymentData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label" >Sintomas</label>
 
     <div class="col-lg-6">
-    <textarea class="form-control" name="symtoms" placeholder="Sintomas" maxlength="50"></textarea>
+    <textarea class="form-control" name="symtoms" placeholder="Por ejemplo: vomito, dolor de cabeza " minlength="5" maxlength="25" required pattern="[a-z]+"></textarea>
     </div>
   </div>
 
@@ -96,7 +96,7 @@ $payments = PaymentData::getAll();
     </div>
   </div>
   <div class="form-group">
-  <label for="inputEmail1" class="col-lg-2 control-label">Estado del pago <SUP><font size="1" color="black">(opcional)</h3></font></SUP></label>
+  <label for="inputEmail1" class="col-lg-2 control-label">Estado del pago <SUP><font size="1" color="black">*</h3></font></SUP></label>
 
     <div class="col-lg-2">
 <select name="payment_id" class="form-control" required>
@@ -114,7 +114,7 @@ $payments = PaymentData::getAll();
     <div class="col-lg-2">
 <div class="input-group">
   <span class="input-group-addon"><i class="fa fa-money"></i></span>
-  <input type="text" class="form-control" name="price" placeholder="Costo" maxlength="7">
+  <input type="number" class="form-control" name="price" placeholder="Por ejemplo: 0 - 10.00"  maxlength="6" required pattern="[1-9]+">
 </div>
     </div>
   </div>

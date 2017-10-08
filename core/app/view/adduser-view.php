@@ -7,10 +7,10 @@ if(count($_POST)>0){
 	$user->lastname = $_POST["lastname"];
 	$user->username = $_POST["username"];
 	$user->email = $_POST["email"];
-	$user->is_admin=$is_admin;
 	$user->password = sha1(md5($_POST["password"]));
 	$user->add();
 
+Core::alert("Usuario Agregado Correctamente!");
 print "<script>window.location='index.php?view=users';</script>";
 
 

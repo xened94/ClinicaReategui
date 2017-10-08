@@ -12,6 +12,7 @@ if(count($_POST)>0){
 	$user->phone = $_POST["phone"];
 	$user->add();
 
+Core::alert("Medico Agregado Correctamente!");
 print "<script>window.location='index.php?view=medics';</script>";
 
  }

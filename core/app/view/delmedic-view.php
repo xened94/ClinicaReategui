@@ -2,6 +2,10 @@
 
 $client = MedicData::getById($_GET["id"]);
 $client->del();
-Core::redir("./index.php?view=medics");
+
+Core::alert("Médico eliminada Correctamente!");
+print "<script>window.location='index.php?view=medics';</script>";
+
+
 
 ?>

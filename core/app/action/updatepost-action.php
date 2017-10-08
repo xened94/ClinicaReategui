@@ -13,6 +13,7 @@ $p->update();
 
 setcookie("added",$p->title);
 
+Core::alert("Cita Actualizada Correctamente!");
 print "<script>window.location='index.php?view=editpost&id=$p->id';</script>";
 }
 ?>

@@ -3,7 +3,8 @@
 $user = UserData::getById($_GET["id"]);
 
 $user->del();
-Core::redir("./index.php?view=users");
 
+Core::alert("Paciente eliminado Correctamente!");
+print "<script>window.location='index.php?view=users';</script>";
 
 ?>

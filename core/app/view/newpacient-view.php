@@ -12,15 +12,17 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <input type="text" name="name" required class="form-control" id="name" placeholder="Nombre" maxlength="20">
+      <textarea name="name" class="form-control" id="name"  placeholder="Por ejemplo: frank, jonathan " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
     </div>
   </div>
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido <SUP><font size="2" color="black" maxlength="20">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <input type="text" name="lastname"  class="form-control" id="lastname" placeholder="Apellido">
+       <textarea name="lastname" class="form-control" id="lastname"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
     </div>
   </div>
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Genero <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
@@ -37,15 +39,15 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Fecha de Nacimiento <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <input type="date" name="day_of_birth" class="form-control" required id="address1" placeholder="Fecha de Nacimiento">
+      <input type="date" name="day_of_birth" class="form-control" required id="address1" placeholder="Fecha de Nacimiento" minlength="5" maxlength="8">
     </div>
   </div>
 
 
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">Dirección </label>
+    <label for="inputEmail1" class="col-lg-2 control-label">Dirección <SUP><font size="2" color="black">*</h3></font></SUP> </label>
     <div class="col-md-6">
-      <input type="text" name="address" class="form-control"  id="address1" placeholder="Dirección" maxlength="35" >
+      <textarea name="address" class="form-control" id="address"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
     </div>
   </div>
 
@@ -59,7 +61,8 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Telefono <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <input type="text" name="quantity" class="form-control" id="phone1" placeholder="Telefono" required  maxlength="9">
+
+      <input type="text" name="phone" class="form-control" id="phone" placeholder="Por ejemplo: 965732316 " minlength="5" maxlength="9" required pattern="[1-9]+">
 
     </div>
   </div>
@@ -81,7 +84,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Alergia <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <textarea name="alergy" class="form-control" id="sick" required placeholder="Alergia" maxlength="30"></textarea>
+      <textarea name="alergy" class="form-control" id="stick"  placeholder="Por ejemplo: omeprazol, amoxicilina " minlength="5" maxlength="15" required pattern="[a-z]+"></textarea>
     </div>
   </div>
 

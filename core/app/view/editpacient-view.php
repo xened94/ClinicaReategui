@@ -74,7 +74,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Alergia</label>
     <div class="col-md-6">
-      <textarea name="alergy" class="form-control" id="sick" placeholder="Alergia"><?php echo $user->alergy;?></textarea>
+      <textarea name="alergy" class="form-control" id="stick" placeholder="Alergia"><?php echo $user->alergy;?></textarea>
     </div>
   </div>
 
