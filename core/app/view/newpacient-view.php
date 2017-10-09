@@ -84,7 +84,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Alergia <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <textarea name="alergy" class="form-control" id="stick"  placeholder="Por ejemplo: omeprazol, amoxicilina " minlength="5" maxlength="15" required pattern="[a-z]+"></textarea>
+      <textarea name="alergy" class="form-control" id="alergy"  placeholder="Por ejemplo: omeprazol, amoxicilina " minlength="5" maxlength="15" required pattern="[a-z]+"></textarea>
     </div>
   </div>
 

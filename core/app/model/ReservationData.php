@@ -20,14 +20,6 @@ class ReservationData {
 		$sql = "insert into reservation (medic_id,date_at,time_at,pacient_id,user_id,price,status_id,payment_id,symtoms,created_at) ";
 		$sql .= "value (\"$this->medic_id\",\"$this->date_at\",\"$this->time_at\",$this->pacient_id,$this->user_id,\"$this->price\",$this->status_id,$this->payment_id,\"$this->symtoms\",$this->created_at)";
 
-
-
-
-
-
-
-
-		
 		return Executor::doit($sql);
 	}
 
