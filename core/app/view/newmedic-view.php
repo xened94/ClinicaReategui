@@ -23,30 +23,36 @@ $categories = CategoryData::getAll();
     </select>
     </div>
   </div>
+
 <!--=============================CAMPOS FORMULARIO==========================================-->
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-       <textarea name="name" class="form-control" id="name"  placeholder="Por ejemplo: frank, jonathan " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
+       <input name="name" class="form-control" id="name"  placeholder="Por ejemplo: frank, jonathan " minlength="5" maxlength="35" required pattern="[a-z- ]+">
     </div>
   </div>
+
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-       <textarea name="lastname" class="form-control" id="lastname"  placeholder="Por ejemplo: ruiz, espinola " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
+       <input name="lastname" class="form-control" id="lastname"  placeholder="Por ejemplo: ruiz, espinola " minlength="5" maxlength="35" required pattern="[a-z- ]+">
     </div>
   </div>
+
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Dirección <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-       <textarea name="Dirección" class="form-control" id="Direccion"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"></textarea>  
+       <textarea name="adress" class="form-control" id="adress"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9- ]+(?:\.[a-zA-Z0-9-]+)*$"></textarea>  
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Email<SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
 
-      <input type="text" name="email" class="form-control" id="email" placeholder="Por ejemplo: frankespinola@outlook.es  " minlength="5" maxlength="30" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Por ejemplo: frankespinola@outlook.es  " minlength="5" maxlength="30" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
     </div>
   </div>
 

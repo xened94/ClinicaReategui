@@ -114,7 +114,7 @@ $payments = PaymentData::getAll();
     <div class="col-lg-2">
 <div class="input-group">
   <span class="input-group-addon"><i class="fa fa-money"></i></span>
-  <input type="number" class="form-control" name="price" placeholder="Por ejemplo: 0 - 10.00" minlength="3"  maxlength="6" required pattern="[1-9]+">
+  <input type="number" class="form-control" name="price" placeholder="0 - 10.00" minlength="3"  maxlength="6" required pattern="[1-9]+">
 </div>
     </div>
   </div>

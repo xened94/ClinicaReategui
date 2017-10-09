@@ -13,7 +13,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre*</label>
     <div class="col-md-6">
-      <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
+      <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" minlength="5" maxlength="35" required pattern="[a-z- ]+">
     </div>
   </div>
 
@@ -22,7 +22,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido*</label>
     <div class="col-md-6">
-      <input type="text" name="lastname" required class="form-control" id="lastname" placeholder="Apellido">
+      <input type="text" name="lastname" required class="form-control" id="lastname" placeholder="Apellido" minlength="5" maxlength="35" required pattern="[a-z- ]+">
     </div>
   </div>
 
@@ -32,7 +32,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre de usuario*</label>
     <div class="col-md-6">
-      <input type="text" name="username" class="form-control" required id="username" placeholder="Nombre de usuario">
+      <input type="text" name="username" class="form-control"  id="username" placeholder="Nombre de usuario" minlength="5" maxlength="15" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~- ]+@[a-zA-Z0-9- ]+(?:\.[a-zA-Z0-9- ]+)*$">
     </div>
   </div>
 
@@ -42,7 +42,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
     <div class="col-md-6">
-      <input type="text" name="email" class="form-control" id="email" placeholder="Email">
+      <input type="email" name="email" class="form-control" id="email" placeholder="Email" minlength="5" maxlength="35" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~- ]+@[a-zA-Z0-9- ]+(?:\.[a-zA-Z0-9- ]+)*$">
     </div>
   </div>
 
@@ -51,7 +51,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Contrase&ntilde;a</label>
     <div class="col-md-6">
-      <input type="password" name="password" class="form-control" id="inputEmail1" placeholder="Contrase&ntilde;a">
+      <input type="password" name="password" class="form-control" id="inputEmail1" placeholder="Contrase&ntilde;a" required>
     </div>
   </div>
 

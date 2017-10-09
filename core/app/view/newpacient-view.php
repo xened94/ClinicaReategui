@@ -12,14 +12,14 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <textarea name="name" class="form-control" id="name"  placeholder="Por ejemplo: frank, jonathan " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
+      <input  type="text" name="name" class="form-control" id="name"  placeholder="Por ejemplo: frank, jonathan " minlength="5" maxlength="25" pattern="[a-z- ]+">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido <SUP><font size="2" color="black" maxlength="20">*</h3></font></SUP></label>
     <div class="col-md-6">
-       <textarea name="lastname" class="form-control" id="lastname"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="[a-z]+"></textarea>
+       <input  name="lastname" class="form-control" id="lastname"  placeholder="Por ejemplo: espinola, ruiz " minlength="0" maxlength="25" required pattern="[a-z- ]+">
     </div>
   </div>
 
@@ -62,7 +62,7 @@
     <label for="inputEmail1" class="col-lg-2 control-label">Telefono <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
 
-      <input type="text" name="phone" class="form-control" id="phone" placeholder="Por ejemplo: 965732316 " minlength="5" maxlength="9" required pattern="[1-9]+">
+      <input type="number" name="phone" class="form-control" id="phone" placeholder="Por ejemplo: 965732316 " minlength="5" maxlength="9" required pattern="[1-9]+">
 
     </div>
   </div>

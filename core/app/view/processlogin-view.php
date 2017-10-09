@@ -21,8 +21,8 @@ if($found==true) {
 
 	$_SESSION['user_id']=$userid ;
 
-	print "<script> alert('Datos Aceptados ')</script>";
-	print "<script> alert('Bienvenido  $user ')</script>";
+	print "<script> alert('Login Exitoso - Bienvenido ')</script>";
+;
 	print "<script>window.location='index.php?view=home';</script>";
 }else {
 	

@@ -22,8 +22,7 @@
 			<table class="table table-bordered table-hover">
 			<thead>
 			<th>Nombre completo</th>
-			<th>Nick</th>
-			<th>Email</th>
+			<th>Nombre de Usuario</th>
 			<th>Activo</th>
 				<th></th>
 			</thead>
@@ -32,7 +31,7 @@
 				?>
 				<tr>
 				<td><?php echo $user->name." ".$user->lastname; ?></td>
-				<td><?php echo $user->email; ?></td>
+
 				<td><?php echo $user->username; ?></td>
 				<td>
 					<?php if($user->is_active):?>
