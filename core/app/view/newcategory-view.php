@@ -12,7 +12,7 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Categoria <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-      <input type="text" name="name" required class="form-control" id="name" placeholder="Por ejemplo: brackets, blanqueamiento " minlength="5" maxlength="25" required pattern="[a-z]+">
+      <input type="text" name="name" required class="form-control" id="name" placeholder="Por ejemplo: brackets, blanqueamiento " minlength="5" maxlength="25"   pattern="[a-z]+">
     </div>
   </div>
 

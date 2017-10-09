@@ -8,7 +8,6 @@ if(count($_POST)>0){
 	$user->day_of_birth = $_POST["day_of_birth"];
 	$user->alergy = $_POST["alergy"];
 	$user->address = $_POST["address"];
-	$user->email = $_POST["email"];
 	$user->phone = $_POST["phone"];
 	$user->update();
 

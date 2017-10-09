@@ -47,7 +47,7 @@ $payments = PaymentData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Fecha</label>
     <div class="col-lg-4">
-      <input type="date" name="date_at" value="<?php echo $reservation->date_at; ?>" required class="form-control" id="inputEmail1" placeholder="Fecha">
+      <input type="date" name="date_at" value="<?php echo $reservation->date_at; ?>" required class="form-control" id="inputEmail1" placeholder="Fecha" minlength="5" maxlength="10">
     </div>
     
   </div>
@@ -75,7 +75,7 @@ $payments = PaymentData::getAll();
     <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Sintomas</label>
     <div class="col-lg-4">
-    <textarea class="form-control" name="symtoms" placeholder="Sintomas"><?php echo $reservation->symtoms;?></textarea>
+    <input class="form-control" name="symtoms" placeholder="Sintomas" value="<?php echo $reservation->symtoms;?>" minlength="5" maxlength="25" required pattern="[a-z- ]+">
     </div>
 
     
@@ -86,6 +86,7 @@ $payments = PaymentData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label">Estado de la cita</label>
     <div class="col-lg-4">
 <select name="status_id" class="form-control" required>
+    <option value="">-- Elija estado --</option>
   <?php foreach($statuses as $p):?>
     <option value="<?php echo $p->id; ?>" <?php if($p->id==$reservation->status_id){ echo "selected"; }?>><?php echo $p->name; ?></option>
   <?php endforeach; ?>
@@ -94,6 +95,7 @@ $payments = PaymentData::getAll();
     <label for="inputEmail1" class="col-lg-2 control-label">Estado del pago</label>
     <div class="col-lg-4">
 <select name="payment_id" class="form-control" required>
+  <option value="">-- Elija pago --</option>
   <?php foreach($payments as $p):?>
     <option value="<?php echo $p->id; ?>" <?php if($p->id==$reservation->payment_id){ echo "selected"; }?>><?php echo $p->name; ?></option>
   <?php endforeach; ?>
@@ -109,7 +111,7 @@ $payments = PaymentData::getAll();
     <div class="col-lg-4">
 <div class="input-group">
   <span class="input-group-addon"><i class="fa fa-usd"></i></span>
-  <input type="text" class="form-control" value="<?php echo $reservation->price;?>" name="price" placeholder="Costo">
+  <input type="number" class="form-control" value="<?php echo $reservation->price;?>" name="price" placeholder="Costo" minlength="3"  maxlength="6" required pattern="[1-9]+">
 </div>
     </div>
   </div>
