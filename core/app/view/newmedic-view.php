@@ -45,7 +45,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Dirección <SUP><font size="2" color="black">*</h3></font></SUP></label>
     <div class="col-md-6">
-       <textarea name="address" class="form-control" id="adress"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9- ]+(?:\.[a-zA-Z0-9-]+)*$"></textarea>  
+       <textarea name="address" class="form-control" id="address"  placeholder="Por ejemplo: obaca flor #811 sto domiguito " minlength="5" maxlength="35" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9- ]+(?:\.[a-zA-Z0-9-]+)*$"></textarea>  
     </div>
   </div>
   <div class="form-group">
