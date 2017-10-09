@@ -44,7 +44,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Direccion*</label>
     <div class="col-md-6">
-      <input type="text" name="address" value="<?php echo $user->address;?>" class="form-control" required id="username" placeholder="Direccion">
+      <input type="text" name="address" value="<?php echo $user->address;?>" class="form-control" required id="address" placeholder="Direccion">
     </div>
   </div>
 
@@ -60,7 +60,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Telefono</label>
     <div class="col-md-6">
-      <input type="text" name="phone"  value="<?php echo $user->phone;?>"  class="form-control" id="inputEmail1" placeholder="Telefono">
+      <input type="text" name="phone"  value="<?php echo $user->phone;?>"  class="form-control" id="phone" placeholder="Telefono">
     </div>
   </div>
 
