@@ -13,11 +13,11 @@ $payments = PaymentData::getAll();
 <div class="card-header" data-background-color="green">
       <h4 class="title">Registrar Cita</h4>
 </div>
+
 <form class="form-horizontal" role="form" method="post" action="./?action=addreservation" >
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label" >Paciente <SUP><font size="2" color="black">*</h3></font></SUP></label>
-
     <div class="col-lg-6">
 <select name="pacient_id" class="form-control" required>
 <option value="">--ELIJA EL PACIENTE--</option>
@@ -27,9 +27,9 @@ $payments = PaymentData::getAll();
 </select>
     </div>
   </div>
+
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Medico <SUP><font size="2" color="black">*</h3></font></SUP></label>
-
     <div class="col-lg-6">
 <select name="medic_id" class="form-control" required>
 <option value="">-- ELIJA EL MEDICO --</option>
@@ -95,10 +95,12 @@ $payments = PaymentData::getAll();
 </select>
     </div>
   </div>
+
+
   <div class="form-group">
   <label for="inputEmail1" class="col-lg-2 control-label">Estado del pago <SUP><font size="1" color="black">*</h3></font></SUP></label>
 
-    <div class="col-lg-2">
+<div class="col-lg-2">
 <select name="payment_id" class="form-control" required>
   <option value="">-- Elija pago --</option>
   <?php foreach($payments as $p):?>
@@ -106,7 +108,7 @@ $payments = PaymentData::getAll();
   <?php endforeach; ?>
 </select>
     </div>
-  </div>
+</div>
 
     <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Costo <SUP><font size="2" color="black">*</h3></font></SUP></label>
@@ -118,6 +120,8 @@ $payments = PaymentData::getAll();
 </div>
     </div>
   </div>
+
+  
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
       <button type="submit" class="btn btn-primary">Agregar Cita</button>
